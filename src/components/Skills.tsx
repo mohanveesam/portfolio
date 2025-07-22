@@ -1,190 +1,227 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { 
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { 
   Code2, 
-  Palette, 
-  Database, 
-  Wrench, 
-  Globe, 
-  Smartphone,
-  FileText,
-  GitBranch
+  TestTube2, 
+  Settings, 
+  Cloud,
+  Terminal,
+  PlayCircle,
+  GitBranch,
+  Wrench,
+  Monitor,
+  Shield,
+  Database,
+  Container,
+  Gauge,
+  Zap,
+  Bot,
+  Server
 } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
+      id: "scripting",
       icon: Code2,
-      title: "Frontend Technologies",
+      title: "Scripting Languages",
+      description: "Programming languages for automation and scripting",
       skills: [
-        { name: "React", level: 90, color: "bg-primary" },
-        { name: "TypeScript", level: 85, color: "bg-secondary" },
-        { name: "JavaScript", level: 95, color: "bg-primary" },
-        { name: "Next.js", level: 80, color: "bg-secondary" },
-        { name: "Vue.js", level: 70, color: "bg-primary" },
+        { name: "Python", level: 95, icon: Terminal },
+        { name: "JavaScript/Node.js", level: 85, icon: Code2 },
+        { name: "Shell/Bash", level: 90, icon: Terminal },
+        { name: "PowerShell", level: 75, icon: Terminal },
+        { name: "TypeScript", level: 80, icon: Code2 },
       ]
     },
     {
-      icon: Palette,
-      title: "Styling & Design",
+      id: "testing",
+      icon: TestTube2,
+      title: "Testing Tools",
+      description: "Automated testing frameworks and tools",
       skills: [
-        { name: "Tailwind CSS", level: 95, color: "bg-secondary" },
-        { name: "CSS3", level: 90, color: "bg-primary" },
-        { name: "SASS/SCSS", level: 85, color: "bg-secondary" },
-        { name: "Figma", level: 75, color: "bg-primary" },
-        { name: "Adobe XD", level: 70, color: "bg-secondary" },
+        { name: "Selenium", level: 90, icon: Bot },
+        { name: "Playwright", level: 85, icon: PlayCircle },
+        { name: "Cypress", level: 80, icon: TestTube2 },
+        { name: "Jest", level: 85, icon: TestTube2 },
+        { name: "Pytest", level: 90, icon: TestTube2 },
+        { name: "Robot Framework", level: 75, icon: Bot },
       ]
     },
     {
-      icon: Database,
-      title: "Backend & Database",
+      id: "cicd",
+      icon: Settings,
+      title: "CI/CD & DevOps",
+      description: "Continuous integration, deployment, and infrastructure automation",
       skills: [
-        { name: "Node.js", level: 75, color: "bg-primary" },
-        { name: "Express.js", level: 70, color: "bg-secondary" },
-        { name: "MongoDB", level: 65, color: "bg-primary" },
-        { name: "PostgreSQL", level: 60, color: "bg-secondary" },
-        { name: "REST APIs", level: 80, color: "bg-primary" },
+        { name: "GitHub Actions", level: 90, icon: GitBranch },
+        { name: "Jenkins", level: 85, icon: Settings },
+        { name: "Docker", level: 88, icon: Container },
+        { name: "Kubernetes", level: 75, icon: Container },
+        { name: "Terraform", level: 70, icon: Server },
+        { name: "Ansible", level: 80, icon: Settings },
       ]
     },
     {
-      icon: Wrench,
-      title: "Tools & Workflow",
+      id: "cloud",
+      icon: Cloud,
+      title: "Cloud & Monitoring",
+      description: "Cloud platforms and monitoring solutions",
       skills: [
-        { name: "Git", level: 90, color: "bg-secondary" },
-        { name: "VS Code", level: 95, color: "bg-primary" },
-        { name: "Webpack", level: 75, color: "bg-secondary" },
-        { name: "Vite", level: 85, color: "bg-primary" },
-        { name: "Jest", level: 70, color: "bg-secondary" },
+        { name: "AWS", level: 85, icon: Cloud },
+        { name: "Azure", level: 75, icon: Cloud },
+        { name: "Grafana", level: 80, icon: Monitor },
+        { name: "Prometheus", level: 75, icon: Gauge },
+        { name: "ELK Stack", level: 70, icon: Database },
+        { name: "DataDog", level: 65, icon: Monitor },
       ]
     }
   ];
 
-  const certifications = [
-    "React Developer Certification",
-    "TypeScript Advanced Concepts",
-    "AWS Cloud Practitioner",
-    "Google UX Design Certificate"
-  ];
-
-  const otherSkills = [
-    "Responsive Design", "Mobile-First Development", "SEO Optimization",
-    "Web Accessibility", "Performance Optimization", "Cross-Browser Compatibility",
-    "Agile Methodology", "Team Collaboration", "Code Review",
-    "Problem Solving", "Debugging", "Technical Writing"
+  const additionalSkills = [
+    "API Testing", "Performance Testing", "Load Testing", "Security Testing",
+    "Test Data Management", "Test Environment Setup", "Agile/Scrum",
+    "Git/Version Control", "Linux Administration", "Network Automation",
+    "Database Testing", "Mobile Test Automation", "Cross-browser Testing"
   ];
 
   return (
-    <section id="skills" className="py-20 relative">
+    <section id="skills" className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            My <span className="text-gradient">Skills</span>
+            Technical <span className="text-gradient">Skills</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive overview of my technical expertise and the tools I use to bring ideas to life.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Comprehensive automation engineering expertise across scripting, testing, CI/CD, and cloud technologies
           </p>
         </div>
 
-        {/* Technical Skills Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {skillCategories.map((category, index) => (
-            <Card key={index} className="gradient-card border border-border/50 glow-soft animate-fade-in">
-              <CardHeader>
-                <CardTitle className="flex items-center text-xl">
-                  <category.icon className="w-6 h-6 mr-3 text-primary" />
-                  {category.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+        {/* Skills Accordion */}
+        <div className="max-w-4xl mx-auto mb-16">
+          <Accordion type="multiple" className="space-y-6 animate-fade-in">
+            {skillCategories.map((category, index) => (
+              <AccordionItem 
+                key={category.id} 
+                value={category.id}
+                className="gradient-card border border-border/50 rounded-lg overflow-hidden glow-soft hover:glow-medium transition-all duration-300"
+              >
+                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
+                  <div className="flex items-center space-x-4 text-left w-full">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                      <category.icon className="w-6 h-6 text-primary" />
                     </div>
-                    <Progress 
-                      value={skill.level} 
-                      className="h-2"
-                    />
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                        {category.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1">
+                        {category.description}
+                      </p>
+                    </div>
+                    <Badge variant="outline" className="ml-4 border-primary/30 text-primary">
+                      {category.skills.length} skills
+                    </Badge>
                   </div>
-                ))}
-              </CardContent>
-            </Card>
-          ))}
+                </AccordionTrigger>
+                <AccordionContent className="px-6 pb-6">
+                  <div className="grid sm:grid-cols-2 gap-4 pt-2">
+                    {category.skills.map((skill, skillIndex) => (
+                      <div 
+                        key={skillIndex} 
+                        className="p-4 rounded-lg bg-accent/30 border border-border/30 hover:bg-accent/50 hover:border-border/50 transition-all duration-300 group"
+                      >
+                        <div className="flex items-center space-x-3 mb-3">
+                          <div className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
+                            <skill.icon className="w-4 h-4 text-primary" />
+                          </div>
+                          <div className="flex-1 min-w-0">
+                            <span className="text-sm font-medium text-foreground">
+                              {skill.name}
+                            </span>
+                          </div>
+                          <span className="text-xs text-muted-foreground font-medium">
+                            {skill.level}%
+                          </span>
+                        </div>
+                        <Progress 
+                          value={skill.level} 
+                          className="h-2 bg-accent/50"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
 
-        {/* Additional Skills and Certifications */}
-        <div className="grid lg:grid-cols-2 gap-8">
-          {/* Other Skills */}
-          <Card className="gradient-card border border-border/50 glow-soft animate-fade-in">
-            <CardHeader>
-              <CardTitle className="flex items-center text-xl">
-                <Globe className="w-6 h-6 mr-3 text-primary" />
-                Additional Skills
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="flex flex-wrap gap-2">
-                {otherSkills.map((skill, index) => (
-                  <Badge 
-                    key={index} 
-                    variant="outline" 
-                    className="border-primary/20 hover:border-primary/40 hover:bg-primary/5 transition-colors duration-300"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+        {/* Additional Skills */}
+        <div className="max-w-4xl mx-auto animate-fade-in">
+          <div className="gradient-card border border-border/50 rounded-lg p-6 glow-soft">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
+                <Zap className="w-5 h-5 text-secondary" />
               </div>
-            </CardContent>
-          </Card>
-
-          {/* Certifications */}
-          <Card className="gradient-card border border-border/50 glow-soft animate-fade-in">
-            <CardHeader>
-              <CardTitle className="flex items-center text-xl">
-                <FileText className="w-6 h-6 mr-3 text-secondary" />
-                Certifications
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              {certifications.map((cert, index) => (
-                <div key={index} className="flex items-center p-3 rounded-lg bg-accent/50 border border-border/30">
-                  <Badge className="bg-secondary/20 text-secondary border-secondary/30 mr-3">
-                    ✓
-                  </Badge>
-                  <span className="text-sm font-medium">{cert}</span>
-                </div>
-              ))}
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Learning Section */}
-        <Card className="mt-8 gradient-card border border-border/50 glow-soft animate-fade-in">
-          <CardHeader>
-            <CardTitle className="flex items-center text-xl">
-              <Smartphone className="w-6 h-6 mr-3 text-primary" />
-              Currently Learning
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-muted-foreground mb-4">
-              I believe in continuous learning and staying updated with the latest technologies:
-            </p>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground">
+                  Additional Expertise
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Supporting skills and methodologies
+                </p>
+              </div>
+            </div>
             <div className="flex flex-wrap gap-2">
-              {["Three.js", "React Native", "GraphQL", "Docker", "Kubernetes"].map((tech, index) => (
+              {additionalSkills.map((skill, index) => (
                 <Badge 
                   key={index} 
-                  className="bg-gradient-primary border-0 text-black font-medium animate-glow-pulse"
+                  variant="outline" 
+                  className="border-secondary/20 hover:border-secondary/40 hover:bg-secondary/5 transition-all duration-300 hover:scale-105"
+                >
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Currently Learning */}
+        <div className="max-w-4xl mx-auto mt-8 animate-fade-in">
+          <div className="gradient-card border border-border/50 rounded-lg p-6 glow-soft">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Shield className="w-5 h-5 text-primary animate-pulse" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-foreground">
+                  Currently Learning
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Expanding expertise in emerging technologies
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              {["AI/ML Testing", "Blockchain Testing", "Edge Computing", "Service Mesh", "GitOps"].map((tech, index) => (
+                <Badge 
+                  key={index} 
+                  className="bg-gradient-primary border-0 text-black font-medium hover:scale-105 transition-transform duration-300 animate-glow-pulse"
                 >
                   {tech}
                 </Badge>
               ))}
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </div>
     </section>
   );
