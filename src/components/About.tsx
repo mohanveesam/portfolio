@@ -32,7 +32,7 @@ const About = () => {
                 <div className="relative">
                   <img 
                     src={developerPortrait} 
-                    alt="Alex Morgan - Frontend Developer" 
+                    alt="Mohan Vessam - Frontend Developer" 
                     className="w-full h-[500px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent"></div>
@@ -96,7 +96,7 @@ const About = () => {
               </Card>
               <Card className="gradient-card border border-border/50">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-secondary mb-2">15+</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">5+</div>
                   <div className="text-muted-foreground">Projects Completed</div>
                 </CardContent>
               </Card>

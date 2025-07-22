@@ -5,60 +5,58 @@ import { Building2, Calendar, MapPin, ExternalLink } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Frontend Developer",
-      company: "TechFlow Solutions",
-      location: "San Francisco, CA",
-      period: "Jan 2023 - Present",
-      type: "Full-time",
-      description: "Leading frontend development for enterprise-level applications, mentoring junior developers, and implementing modern design systems.",
-      achievements: [
-        "Increased application performance by 40% through optimization techniques",
-        "Led a team of 4 developers in rebuilding the main dashboard",
-        "Implemented comprehensive testing strategy reducing bugs by 60%",
-        "Mentored 3 junior developers, improving team productivity by 25%"
-      ],
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "GraphQL", "Jest"],
-      link: "https://techflow.com"
-    },
-    {
       title: "Frontend Developer",
-      company: "Digital Innovations Inc.",
-      location: "Austin, TX",
-      period: "Jun 2022 - Dec 2022",
+      company: "Smartify Software Solutions",
+      location: "Remote",
+      period: "2022 - Present",
       type: "Full-time",
-      description: "Developed responsive web applications and collaborated with cross-functional teams to deliver high-quality user experiences.",
+      description: "Developing responsive web applications and implementing modern frontend solutions using React, TypeScript, and modern CSS frameworks.",
       achievements: [
-        "Built 5+ responsive web applications from scratch",
-        "Collaborated with UX/UI designers to implement pixel-perfect designs",
-        "Improved code quality through implementation of ESLint and Prettier",
-        "Reduced initial load time by 30% through code splitting and lazy loading"
+        "Successfully completed 5+ frontend projects with modern tech stack",
+        "Implemented responsive designs that work across all device types",
+        "Collaborated with backend developers to integrate REST APIs",
+        "Improved application performance through code optimization"
       ],
-      technologies: ["React", "JavaScript", "SASS", "Node.js", "MongoDB", "Git"],
-      link: "https://digitalinnovations.com"
+      technologies: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3", "Git"],
+      link: "https://smartifysoftware.com"
     }
   ];
 
   const projects = [
     {
-      title: "E-Commerce Platform Redesign",
-      period: "Q3 2023",
-      description: "Complete frontend overhaul of a major e-commerce platform serving 100K+ users",
-      impact: "35% increase in conversion rate",
-      technologies: ["React", "TypeScript", "Redux", "Stripe API"]
+      title: "E-Commerce Web Application",
+      period: "2023",
+      description: "Built a responsive e-commerce platform with shopping cart, product catalog, and user authentication",
+      impact: "Modern user experience with mobile-first design",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "REST API"]
     },
     {
-      title: "Real-time Analytics Dashboard",
-      period: "Q1 2023",
-      description: "Built a comprehensive analytics dashboard with real-time data visualization",
-      impact: "Improved decision-making speed by 50%",
-      technologies: ["Vue.js", "D3.js", "WebSocket", "Chart.js"]
+      title: "Portfolio Website",
+      period: "2023",
+      description: "Created a modern, responsive portfolio website showcasing projects and skills",
+      impact: "Professional online presence",
+      technologies: ["React", "CSS3", "JavaScript", "Responsive Design"]
     },
     {
-      title: "Mobile-First Design System",
-      period: "Q4 2022",
-      description: "Created a comprehensive design system and component library",
-      impact: "Reduced development time by 40%",
-      technologies: ["React", "Storybook", "Styled Components", "Figma"]
+      title: "Task Management App",
+      period: "2022",
+      description: "Developed a task management application with drag-and-drop functionality",
+      impact: "Improved productivity for users",
+      technologies: ["React", "JavaScript", "HTML5", "CSS3"]
+    },
+    {
+      title: "Weather Dashboard",
+      period: "2022",
+      description: "Built a weather dashboard using external APIs with real-time data",
+      impact: "User-friendly weather information display",
+      technologies: ["JavaScript", "API Integration", "CSS3", "HTML5"]
+    },
+    {
+      title: "Landing Page Design",
+      period: "2022",
+      description: "Created responsive landing pages for various business clients",
+      impact: "Increased client conversion rates",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
     }
   ];
 

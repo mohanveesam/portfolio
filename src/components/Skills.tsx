@@ -1,167 +1,89 @@
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
-import { 
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { 
   Code2, 
-  TestTube2, 
-  Settings, 
-  Cloud,
-  Terminal,
-  PlayCircle,
+  Database, 
   GitBranch,
-  Wrench,
-  Monitor,
-  Shield,
-  Database,
-  Container,
-  Gauge,
-  Zap,
-  Bot,
-  Server
+  Palette,
+  Globe,
+  Smartphone,
+  FileText,
+  Wrench
 } from "lucide-react";
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      id: "scripting",
-      icon: Code2,
-      title: "Scripting Languages",
-      description: "Programming languages for automation and scripting",
-      skills: [
-        { name: "Python", level: 95, icon: Terminal },
-        { name: "JavaScript/Node.js", level: 85, icon: Code2 },
-        { name: "Shell/Bash", level: 90, icon: Terminal },
-        { name: "PowerShell", level: 75, icon: Terminal },
-        { name: "TypeScript", level: 80, icon: Code2 },
-      ]
-    },
-    {
-      id: "testing",
-      icon: TestTube2,
-      title: "Testing Tools",
-      description: "Automated testing frameworks and tools",
-      skills: [
-        { name: "Selenium", level: 90, icon: Bot },
-        { name: "Playwright", level: 85, icon: PlayCircle },
-        { name: "Cypress", level: 80, icon: TestTube2 },
-        { name: "Jest", level: 85, icon: TestTube2 },
-        { name: "Pytest", level: 90, icon: TestTube2 },
-        { name: "Robot Framework", level: 75, icon: Bot },
-      ]
-    },
-    {
-      id: "cicd",
-      icon: Settings,
-      title: "CI/CD & DevOps",
-      description: "Continuous integration, deployment, and infrastructure automation",
-      skills: [
-        { name: "GitHub Actions", level: 90, icon: GitBranch },
-        { name: "Jenkins", level: 85, icon: Settings },
-        { name: "Docker", level: 88, icon: Container },
-        { name: "Kubernetes", level: 75, icon: Container },
-        { name: "Terraform", level: 70, icon: Server },
-        { name: "Ansible", level: 80, icon: Settings },
-      ]
-    },
-    {
-      id: "cloud",
-      icon: Cloud,
-      title: "Cloud & Monitoring",
-      description: "Cloud platforms and monitoring solutions",
-      skills: [
-        { name: "AWS", level: 85, icon: Cloud },
-        { name: "Azure", level: 75, icon: Cloud },
-        { name: "Grafana", level: 80, icon: Monitor },
-        { name: "Prometheus", level: 75, icon: Gauge },
-        { name: "ELK Stack", level: 70, icon: Database },
-        { name: "DataDog", level: 65, icon: Monitor },
-      ]
-    }
+  const frontendSkills = [
+    { name: "React", icon: "⚛️", color: "text-blue-400" },
+    { name: "Next.js", icon: "▲", color: "text-white" },
+    { name: "JavaScript", icon: "JS", color: "text-yellow-400" },
+    { name: "TypeScript", icon: "TS", color: "text-blue-500" },
+    { name: "Tailwind CSS", icon: "🎨", color: "text-cyan-400" },
+    { name: "HTML5", icon: "🌐", color: "text-orange-500" },
+    { name: "CSS3", icon: "🎨", color: "text-blue-600" },
+    { name: "Git", icon: "🔀", color: "text-orange-600" },
   ];
 
   const additionalSkills = [
-    "API Testing", "Performance Testing", "Load Testing", "Security Testing",
-    "Test Data Management", "Test Environment Setup", "Agile/Scrum",
-    "Git/Version Control", "Linux Administration", "Network Automation",
-    "Database Testing", "Mobile Test Automation", "Cross-browser Testing"
+    "Responsive Design", "Mobile-First Development", "RESTful APIs",
+    "State Management (Redux)", "Component Libraries", "Performance Optimization",
+    "Cross-Browser Compatibility", "Version Control", "Agile Methodology",
+    "Problem Solving", "Team Collaboration", "Code Review"
   ];
 
   return (
-    <section id="skills" className="py-20 relative overflow-hidden">
+    <section id="skills" className="py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Technical <span className="text-gradient">Skills</span>
+            My <span className="text-gradient">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Comprehensive automation engineering expertise across scripting, testing, CI/CD, and cloud technologies
+            Frontend technologies and tools I use to create amazing user experiences
           </p>
         </div>
 
-        {/* Skills Accordion */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <Accordion type="multiple" className="space-y-6 animate-fade-in">
-            {skillCategories.map((category, index) => (
-              <AccordionItem 
-                key={category.id} 
-                value={category.id}
-                className="gradient-card border border-border/50 rounded-lg overflow-hidden glow-soft hover:glow-medium transition-all duration-300"
-              >
-                <AccordionTrigger className="px-6 py-4 hover:no-underline group">
-                  <div className="flex items-center space-x-4 text-left w-full">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                      <category.icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
-                        {category.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        {category.description}
-                      </p>
-                    </div>
-                    <Badge variant="outline" className="ml-4 border-primary/30 text-primary">
-                      {category.skills.length} skills
-                    </Badge>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="px-6 pb-6">
-                  <div className="grid sm:grid-cols-2 gap-4 pt-2">
-                    {category.skills.map((skill, skillIndex) => (
-                      <div 
-                        key={skillIndex} 
-                        className="p-4 rounded-lg bg-accent/30 border border-border/30 hover:bg-accent/50 hover:border-border/50 transition-all duration-300 group"
-                      >
-                        <div className="flex items-center space-x-3 mb-3">
-                          <div className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors duration-300">
-                            <skill.icon className="w-4 h-4 text-primary" />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <span className="text-sm font-medium text-foreground">
-                              {skill.name}
-                            </span>
-                          </div>
-                          <span className="text-xs text-muted-foreground font-medium">
-                            {skill.level}%
-                          </span>
-                        </div>
-                        <Progress 
-                          value={skill.level} 
-                          className="h-2 bg-accent/50"
-                        />
-                      </div>
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+        {/* Main Skills Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-16 animate-fade-in">
+          {frontendSkills.map((skill, index) => (
+            <div 
+              key={index}
+              className="gradient-card border border-border/50 rounded-lg p-6 text-center hover:glow-medium transition-all duration-300 hover:scale-105 group"
+            >
+              <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-accent/30 flex items-center justify-center text-2xl group-hover:bg-accent/50 transition-colors duration-300">
+                {skill.icon}
+              </div>
+              <h3 className={`text-lg font-semibold ${skill.color} group-hover:text-primary transition-colors duration-300`}>
+                {skill.name}
+              </h3>
+            </div>
+          ))}
+        </div>
+
+        {/* Experience Stats */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16 animate-fade-in">
+          <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
+              <Code2 className="w-8 h-8 text-primary" />
+            </div>
+            <h3 className="text-2xl font-bold text-primary mb-2">2+</h3>
+            <p className="text-muted-foreground">Years Experience</p>
+          </div>
+          
+          <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-secondary/10 flex items-center justify-center">
+              <Globe className="w-8 h-8 text-secondary" />
+            </div>
+            <h3 className="text-2xl font-bold text-secondary mb-2">5+</h3>
+            <p className="text-muted-foreground">Projects Completed</p>
+          </div>
+          
+          <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
+            <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
+              <Wrench className="w-8 h-8 text-primary" />
+            </div>
+            <h3 className="text-2xl font-bold text-primary mb-2">Frontend</h3>
+            <p className="text-muted-foreground">Specialization</p>
+          </div>
         </div>
 
         {/* Additional Skills */}
@@ -169,7 +91,7 @@ const Skills = () => {
           <div className="gradient-card border border-border/50 rounded-lg p-6 glow-soft">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
-                <Zap className="w-5 h-5 text-secondary" />
+                <FileText className="w-5 h-5 text-secondary" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-foreground">
@@ -199,19 +121,19 @@ const Skills = () => {
           <div className="gradient-card border border-border/50 rounded-lg p-6 glow-soft">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                <Shield className="w-5 h-5 text-primary animate-pulse" />
+                <Smartphone className="w-5 h-5 text-primary animate-pulse" />
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-foreground">
                   Currently Learning
                 </h3>
                 <p className="text-sm text-muted-foreground">
-                  Expanding expertise in emerging technologies
+                  Expanding my frontend development skills
                 </p>
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              {["AI/ML Testing", "Blockchain Testing", "Edge Computing", "Service Mesh", "GitOps"].map((tech, index) => (
+              {["React Native", "Three.js", "GraphQL", "Vue.js", "Svelte"].map((tech, index) => (
                 <Badge 
                   key={index} 
                   className="bg-gradient-primary border-0 text-black font-medium hover:scale-105 transition-transform duration-300 animate-glow-pulse"

@@ -7,7 +7,7 @@ const Hero = () => {
     // In a real app, this would download the actual resume file
     const link = document.createElement('a');
     link.href = '/resume.pdf'; // Add your resume file to public folder
-    link.download = 'Alex_Morgan_Resume.pdf';
+    link.download = 'Mohan_Vessam_Resume.pdf';
     link.click();
   };
 
@@ -39,7 +39,7 @@ const Hero = () => {
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
               <span className="block">Hi, I'm</span>
-              <span className="text-gradient animate-glow-pulse">Alex Morgan</span>
+              <span className="text-gradient animate-glow-pulse">Mohan Vessam</span>
             </h1>
           </div>
           
@@ -100,7 +100,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:alex@example.com"
+              href="mailto:mohan.vessam@example.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
             >
               <Mail className="w-6 h-6" />
