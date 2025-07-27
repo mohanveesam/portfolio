@@ -39,7 +39,7 @@ const Hero = () => {
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
               <span className="block">Hi, I'm</span>
-              <span className="text-gradient animate-glow-pulse">Mohan Vessam</span>
+              <span className="text-gradient animate-glow-pulse">Mohan Veesam</span>
             </h1>
           </div>
           
