@@ -7,7 +7,7 @@ const Hero = () => {
     // In a real app, this would download the actual resume file
     const link = document.createElement('a');
     link.href = '/resume.pdf'; // Add your resume file to public folder
-    link.download = 'Mohan_Vessam_Resume.pdf';
+    link.download = 'Mohan_Veesam_Resume.pdf';
     link.click();
   };
 
