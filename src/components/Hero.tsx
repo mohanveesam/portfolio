@@ -6,7 +6,7 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // In a real app, this would download the actual resume file
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Add your resume file to public folder
+    link.href = 'https://drive.google.com/drive/folders/1Vghu6CeZU1Z32cvE81MFk_ZXO5aSqnL7'; // Add your resume file to public folder
     link.download = 'Mohan_Veesam_Resume.pdf';
     link.click();
   };
