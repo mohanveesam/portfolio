@@ -87,7 +87,7 @@ const Skills = () => {
         </div>
 
         {/* Additional Skills */}
-        <div className="max-w-4xl mx-auto animate-fade-in">
+{/*         <div className="max-w-4xl mx-auto animate-fade-in">
           <div className="gradient-card border border-border/50 rounded-lg p-6 glow-soft">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
@@ -114,7 +114,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Currently Learning */}
         <div className="max-w-4xl mx-auto mt-8 animate-fade-in">
