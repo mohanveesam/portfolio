@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Heart, Lightbulb, Target } from "lucide-react";
-import developerPortrait from "@/assets/developer-portrait.jpg";
+import developerPortrait from "@/assets/mohan.jpg";
 
 const About = () => {
   const highlights = [
@@ -61,27 +61,17 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-gradient">My Journey</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  With over 2 years of experience in frontend development, I've had the privilege 
-                  of working on diverse projects that have shaped my understanding of modern web 
-                  development. My journey began with a curiosity about how websites work, and it 
-                  has evolved into a passion for creating seamless, accessible, and beautiful 
-                  digital experiences.
+                  I have 2+ years of experience in frontend development, working on projects and applications. My interest in how things work has grown into a passion for building user-friendly and visually engaging interfaces.
                 </p>
                 
                 <h3 className="text-2xl font-semibold mb-4 text-gradient">What Drives Me</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I believe that great software is not just about functionality—it's about creating 
-                  an emotional connection with users. Every line of code I write is guided by the 
-                  principle of putting the user first, ensuring that technology serves people, 
-                  not the other way around.
+                 I believe great software is all about connecting with users. My focus is on making sure the technology works seamlessly for them.
                 </p>
                 
                 <h3 className="text-2xl font-semibold mb-4 text-gradient">Beyond Code</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  When I'm not coding, you'll find me exploring new design trends, contributing to 
-                  open-source projects, or mentoring aspiring developers. I'm constantly learning 
-                  and staying up-to-date with the latest technologies to ensure I can deliver 
-                  cutting-edge solutions.
+                  When I'm not coding, I enjoy exploring design trends, contributing to open-source projects, and helping other developers. I’m always learning and staying up-to-date with the latest technologies.
                 </p>
               </CardContent>
             </Card>
@@ -96,7 +86,7 @@ const About = () => {
               </Card>
               <Card className="gradient-card border border-border/50">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-secondary mb-2">5+</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">2+</div>
                   <div className="text-muted-foreground">Projects Completed</div>
                 </CardContent>
               </Card>

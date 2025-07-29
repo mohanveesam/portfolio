@@ -63,8 +63,8 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco,CA"
+      value: "Hyderabad",
+      link: "https://www.google.com/search?q=hyderabad&oq=hyderabad&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBBzI0NmowajGoAgCwAgE&sourceid=chrome&ie=UTF-8"
     }
   ];
 
@@ -72,24 +72,24 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      username: "@alexmorgan",
-      link: "https://github.com/alexmorgan",
+      username: "@mohan-veesam",
+      link: "https://github.com/mohan-veesam",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      username: "Alex Morgan",
-      link: "https://linkedin.com/in/alexmorgan",
+      username: "Mohan Veesam",
+      link: "https://www.linkedin.com/in/mohan-veesam-65aa81232",
       color: "hover:text-blue-400"
     },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      username: "@alex_codes",
-      link: "https://twitter.com/alex_codes",
-      color: "hover:text-blue-400"
-    }
+    // {
+    //   icon: Twitter,
+    //   label: "Twitter",
+    //   username: "@alex_codes",
+    //   link: "https://twitter.com/alex_codes",
+    //   color: "hover:text-blue-400"
+    // }
   ];
 
   return (

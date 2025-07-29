@@ -6,14 +6,14 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // In a real app, this would download the actual resume file
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Add your resume file to public folder
-    link.download = 'Mohan_Vessam_Resume.pdf';
+    link.href = 'https://drive.google.com/file/d/1HDGMERkcF4QusMgrr7_Co_MzNumMftOI/view?usp=drive_link'; // Add your resume file to public folder
+    link.download = 'mohan_veesam.pdf';
     link.click();
   };
 
   const handleViewResume = () => {
     // In a real app, this would open the resume in a new tab
-    window.open('/resume.pdf', '_blank');
+    window.open('/mohan_veesam.pdf', '_blank');
   };
 
   return (
@@ -39,23 +39,23 @@ const Hero = () => {
           <div className="animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
               <span className="block">Hi, I'm</span>
-              <span className="text-gradient animate-glow-pulse">Mohan Vessam</span>
+              <span className="text-gradient animate-glow-pulse">Mohan Veesam</span>
             </h1>
           </div>
           
           {/* Subtitle */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light">
-              Frontend Developer passionate about building{" "}
-              <span className="text-primary font-medium">clean UI/UX</span> experiences
+              Frontend Developer passionate about creating clean{" "}
+              <span className="text-primary font-medium">UI/UX</span> Designs
             </p>
           </div>
           
           {/* Description */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-              2+ years of experience crafting modern, responsive web applications 
-              with React, TypeScript, and cutting-edge technologies.
+              2+ years of experience building modern, responsive web applications 
+              using Angular and other modern technologies.
             </p>
           </div>
           
@@ -84,7 +84,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="animate-fade-in-up flex justify-center space-x-6" style={{animationDelay: '0.8s'}}>
             <a 
-              href="https://github.com" 
+              href="https://github.com/mohan-veesam" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
@@ -92,7 +92,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/mohan-veesam-65aa81232" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
@@ -100,7 +100,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:mohan.vessam@example.com"
+              href="mailto:mohanveesam143@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
             >
               <Mail className="w-6 h-6" />

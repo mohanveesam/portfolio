@@ -7,17 +7,17 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/alexmorgan",
+      href: "https://github.com/mohan-veesam",
       label: "GitHub"
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/alexmorgan",
+      href: "https://www.linkedin.com/in/mohan-veesam-65aa81232",
       label: "LinkedIn"
     },
     {
       icon: Mail,
-      href: "mailto:alex.morgan@example.com",
+      href: "mailto:mohanveesam143@gmail.com",
       label: "Email"
     }
   ];
@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Left section - Branding */}
           <div className="text-center md:text-left">
-            <div className="text-2xl font-bold text-gradient mb-2">Alex Morgan</div>
+            <div className="text-2xl font-bold text-gradient mb-2">Mohan Veesam</div>
             <p className="text-muted-foreground">
               Frontend Developer crafting beautiful web experiences
             </p>
@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Bottom section - Copyright */}
         <div className="mt-8 pt-8 border-t border-border/30 text-center">
           <p className="text-muted-foreground text-sm flex items-center justify-center">
-            © {currentYear} Alex Morgan. Made with{" "}
+            © {currentYear} Mohan Veesam. Made with{" "}
             <Heart className="w-4 h-4 mx-1 text-red-500 animate-pulse" />
             and lots of coffee.
           </p>
