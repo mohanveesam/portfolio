@@ -136,8 +136,8 @@ const Experience = () => {
                     {exp.technologies.map((tech, techIndex) => (
                       <Badge 
                         key={techIndex} 
-                        variant="secondary"
-                        className="bg-secondary/10 text-secondary border-secondary/20"
+                        
+                        className="bg-gradient-primary border-0 text-black font-medium hover:scale-105 transition-transform duration-300 animate-glow-pulse text-white"
                       >
                         {tech}
                       </Badge>

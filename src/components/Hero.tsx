@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Download, Eye, Github, Linkedin, Mail } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/2.jpeg";
 
 const Hero = () => {
   const handleDownloadResume = () => {
     // In a real app, this would download the actual resume file
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1HDGMERkcF4QusMgrr7_Co_MzNumMftOI/view?usp=drive_link'; // Add your resume file to public folder
-    link.download = 'mohan_veesam.pdf';
+    link.href = '/mohan_veesam.pdf'; // Add your resume file to public folder
+    link.download = '/mohan_veesam.pdf';
     link.click();
   };
 

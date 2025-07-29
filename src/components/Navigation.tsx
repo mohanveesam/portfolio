@@ -31,8 +31,8 @@ const Navigation = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Alex_Morgan_Resume.pdf';
+    link.href = '/mohan_veesam.pdf';
+    link.download = '/mohan_veesam.pdf';
     link.click();
   };
 

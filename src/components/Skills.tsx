@@ -136,7 +136,7 @@ const Skills = () => {
               {["Node.js", "Express.js", "React", "MongoDB"].map((tech, index) => (
                 <Badge 
                   key={index} 
-                  className="bg-gradient-primary border-0 text-black font-medium hover:scale-105 transition-transform duration-300 animate-glow-pulse"
+                  className="bg-gradient-primary border-0 text-black font-medium hover:scale-105 transition-transform duration-300 animate-glow-pulse text-white"
                 >
                   {tech}
                 </Badge>
