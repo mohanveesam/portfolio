@@ -70,7 +70,7 @@ const Hero = () => {
               <Download className="w-5 h-5" />
               Download Resume
             </Button>
-            <Button 
+{/*             <Button 
               variant="outline-glow" 
               size="xl"
               onClick={handleViewResume}
@@ -78,7 +78,7 @@ const Hero = () => {
             >
               <Eye className="w-5 h-5" />
               View Resume
-            </Button>
+            </Button> */}
           </div>
           
           {/* Social Links */}
