@@ -25,14 +25,14 @@ const Experience = () => {
   const projects = [
     {
       title: "Enterprise Application Development",
-      period: "2023",
+      period: "2025",
       description: "Developed an enterprise application with role-based authorization, real-time data processing, and streamlined business operations.",
       impact: "Improved operational efficiency and secured access control for different user roles.",
       technologies: ["Angular", "TypeScript", "Bootstrap", "REST API", "Responsive Design"]
     },
     {
       title: "IETM Application Development",
-      period: "2022",
+      period: "2024",
       description: "Developed an IETM application with features like saving pages, adding annotations, glossary management, and a hierarchical three-level page structure for easy navigation.",
       impact: "Enhanced user experience with easy document management, quick navigation, and personalized annotations.",
       technologies: ["Angular", "TypeScript", "Bootstrap", "REST API", "Responsive Design"]
