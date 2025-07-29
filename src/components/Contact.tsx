@@ -72,15 +72,15 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      username: "@alexmorgan",
-      link: "https://github.com/alexmorgan",
+      username: "@mohan-veesam",
+      link: "https://github.com/mohan-veesam",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      username: "Alex Morgan",
-      link: "https://linkedin.com/in/alexmorgan",
+      username: "Mohan Veesam",
+      link: "https://www.linkedin.com/in/mohan-veesam-65aa81232",
       color: "hover:text-blue-400"
     },
     // {
