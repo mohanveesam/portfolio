@@ -6,8 +6,8 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // In a real app, this would download the actual resume file
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/drive/folders/1Vghu6CeZU1Z32cvE81MFk_ZXO5aSqnL7'; // Add your resume file to public folder
-    link.download = 'Mohan_Veesam_Resume.pdf';
+    link.href = 'https://drive.google.com/drive/folders/1Vghu6CeZU1Z32cvE81MFk_ZXO5aSqnL7?usp=sharing'; // Add your resume file to public folder
+    link.download = 'mohan_veesam.pdf';
     link.click();
   };
 
@@ -84,7 +84,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="animate-fade-in-up flex justify-center space-x-6" style={{animationDelay: '0.8s'}}>
             <a 
-              href="https://github.com" 
+              href="https://github.com/mohan-veesam" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
@@ -92,7 +92,7 @@ const Hero = () => {
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/mohan-veesam-65aa81232" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
@@ -100,7 +100,7 @@ const Hero = () => {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:mohan.vessam@example.com"
+              href="mailto:mohanveesam143@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
             >
               <Mail className="w-6 h-6" />
