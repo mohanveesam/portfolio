@@ -63,8 +63,8 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco,CA"
+      value: "Hyderabad",
+      link: "https://www.google.com/search?q=hyderabad&oq=hyderabad&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiPAjIHCAIQABiPAjIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPNIBBzI0NmowajGoAgCwAgE&sourceid=chrome&ie=UTF-8"
     }
   ];
 
@@ -83,13 +83,13 @@ const Contact = () => {
       link: "https://linkedin.com/in/alexmorgan",
       color: "hover:text-blue-400"
     },
-    {
-      icon: Twitter,
-      label: "Twitter",
-      username: "@alex_codes",
-      link: "https://twitter.com/alex_codes",
-      color: "hover:text-blue-400"
-    }
+    // {
+    //   icon: Twitter,
+    //   label: "Twitter",
+    //   username: "@alex_codes",
+    //   link: "https://twitter.com/alex_codes",
+    //   color: "hover:text-blue-400"
+    // }
   ];
 
   return (
