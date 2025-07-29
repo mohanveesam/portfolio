@@ -12,14 +12,14 @@ import {
 
 const Skills = () => {
   const frontendSkills = [
-    { name: "React", icon: "⚛️", color: "text-blue-400" },
-    { name: "Next.js", icon: "▲", color: "text-white" },
+    { name: "Angular", icon: "🅰️", color: "text-blue-400" },
+    { name: "TypeScript", icon: "TS", color: "text-white" },
     { name: "JavaScript", icon: "JS", color: "text-yellow-400" },
-    { name: "TypeScript", icon: "TS", color: "text-blue-500" },
-    { name: "Tailwind CSS", icon: "🎨", color: "text-cyan-400" },
-    { name: "HTML5", icon: "🌐", color: "text-orange-500" },
-    { name: "CSS3", icon: "🎨", color: "text-blue-600" },
-    { name: "Git", icon: "🔀", color: "text-orange-600" },
+    { name: "RxJS", icon: "🔄", color: "text-blue-500" },
+    { name: "HTML5", icon: "🌐", color: "text-cyan-400" },
+    { name: "CSS3", icon: "🎨", color: "text-orange-500" },
+    { name: "Bootstrap", icon: "🔧", color: "text-blue-600" },
+    { name: "MySQL", icon: "💾", color: "text-orange-600" },
   ];
 
   const additionalSkills = [
