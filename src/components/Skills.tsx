@@ -134,7 +134,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              {["Node.js ", "Express.js", "React ⚛️"].map((tech, index) => (
+              {["Node.js ", "Express.js", "React", "MongoDB"].map((tech, index) => (
                 <Badge 
                   key={index} 
                   className="bg-gradient-primary border-0 text-black font-medium hover:scale-105 transition-transform duration-300 animate-glow-pulse"
