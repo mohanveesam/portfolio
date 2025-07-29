@@ -19,7 +19,7 @@ const Skills = () => {
     { name: "HTML5", icon: "🌐", color: "text-cyan-400" },
     { name: "CSS3", icon: "🎨", color: "text-orange-500" },
     { name: "Bootstrap", icon: "🎨", color: "text-blue-600" },
-    { name: "MySQL ", icon: "🗃️", color: "text-orange-600" },
+    { name: "MySQL", icon: "🗃️", color: "text-orange-600" },
   ];
 
   const additionalSkills = [
