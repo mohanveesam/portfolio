@@ -72,7 +72,6 @@ const Skills = () => {
           <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
             <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-secondary/10 flex items-center justify-center">
               <Globe className="w-8 h-8 text-secondary" />
-        
             </div>
             <h3 className="text-2xl font-bold text-secondary mb-2">5+</h3>
             <p className="text-muted-foreground">Vs Code</p>
