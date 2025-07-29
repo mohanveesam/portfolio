@@ -86,7 +86,7 @@ const About = () => {
               </Card>
               <Card className="gradient-card border border-border/50">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-secondary mb-2">3+</div>
+                  <div className="text-3xl font-bold text-secondary mb-2">2+</div>
                   <div className="text-muted-foreground">Projects Completed</div>
                 </CardContent>
               </Card>
