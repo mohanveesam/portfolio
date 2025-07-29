@@ -13,7 +13,7 @@ const Hero = () => {
 
   const handleViewResume = () => {
     // In a real app, this would open the resume in a new tab
-    window.open('mohan_veesam.pdf', '_blank');
+    window.open('/mohan_veesam.pdf', '_blank');
   };
 
   return (
