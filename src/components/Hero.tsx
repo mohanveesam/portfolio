@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light">
               Frontend Developer passionate about creating clean{" "}
-              <span className="text-primary font-medium">clean UI/UX</span> Designs
+              <span className="text-primary font-medium">UI/UX</span> Designs
             </p>
           </div>
           
