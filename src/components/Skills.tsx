@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { 
   Code2, 
   Database, 
-  GitBranch,
+  GitBranch,.
   Palette,
   Globe,
   Smartphone,
@@ -12,14 +12,14 @@ import {
 
 const Skills = () => {
   const frontendSkills = [
-    { name: "React", icon: "⚛️", color: "text-blue-400" },
-    { name: "Next.js", icon: "▲", color: "text-white" },
+    { name: "Angular", icon: "🌿", color: "text-blue-400" },
+    { name: "TypeScript", icon: "TS", color: "text-white" },
     { name: "JavaScript", icon: "JS", color: "text-yellow-400" },
-    { name: "TypeScript", icon: "TS", color: "text-blue-500" },
-    { name: "Tailwind CSS", icon: "🎨", color: "text-cyan-400" },
-    { name: "HTML5", icon: "🌐", color: "text-orange-500" },
-    { name: "CSS3", icon: "🎨", color: "text-blue-600" },
-    { name: "Git", icon: "🔀", color: "text-orange-600" },
+    { name: "RxJS", icon: "📡", color: "text-blue-500" },
+    { name: "HTML5", icon: "🌐", color: "text-cyan-400" },
+    { name: "CSS3", icon: "🎨", color: "text-orange-500" },
+    { name: "Bootstrap", icon: "🎨", color: "text-blue-600" },
+    { name: "MySQL ", icon: "🗃️", color: "text-orange-600" },
   ];
 
   const additionalSkills = [
@@ -65,16 +65,17 @@ const Skills = () => {
             <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
               <Code2 className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-2xl font-bold text-primary mb-2">2+</h3>
-            <p className="text-muted-foreground">Years Experience</p>
+{/*             <h3 className="text-2xl font-bold text-primary mb-2">2+</h3> */}
+            <p className="text-muted-foreground">Git</p>
           </div>
           
           <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
             <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-secondary/10 flex items-center justify-center">
-              <Globe className="w-8 h-8 text-secondary" />
+{/*               <Globe className="w-8 h-8 text-secondary" /> */}
+              <span className="w-8 h-8 text-secondary" role="img" aria-label="git">🔀</span>
             </div>
-            <h3 className="text-2xl font-bold text-secondary mb-2">5+</h3>
-            <p className="text-muted-foreground">Projects Completed</p>
+{/*             <h3 className="text-2xl font-bold text-secondary mb-2">5+</h3> */}
+            <p className="text-muted-foreground">Vs Code</p>
           </div>
           
           <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
@@ -87,7 +88,7 @@ const Skills = () => {
         </div>
 
         {/* Additional Skills */}
-        <div className="max-w-4xl mx-auto animate-fade-in">
+{/*         <div className="max-w-4xl mx-auto animate-fade-in">
           <div className="gradient-card border border-border/50 rounded-lg p-6 glow-soft">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
@@ -114,7 +115,7 @@ const Skills = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Currently Learning */}
         <div className="max-w-4xl mx-auto mt-8 animate-fade-in">
@@ -133,7 +134,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="flex flex-wrap gap-3">
-              {["React Native", "Three.js", "GraphQL", "Vue.js", "Svelte"].map((tech, index) => (
+              {["Node.js ", "Express.js", "React ⚛️"].map((tech, index) => (
                 <Badge 
                   key={index} 
                   className="bg-gradient-primary border-0 text-black font-medium hover:scale-105 transition-transform duration-300 animate-glow-pulse"
