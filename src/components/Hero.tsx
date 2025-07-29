@@ -46,16 +46,16 @@ const Hero = () => {
           {/* Subtitle */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             <p className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 font-light">
-              Frontend Developer passionate about building{" "}
-              <span className="text-primary font-medium">clean UI/UX</span> experiences
+              Frontend Developer passionate about creating clean{" "}
+              <span className="text-primary font-medium">clean UI/UX</span> Designs
             </p>
           </div>
           
           {/* Description */}
           <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-              2+ years of experience crafting modern, responsive web applications 
-              with React, TypeScript, and cutting-edge technologies.
+              2+ years of experience building modern, responsive web applications 
+              using Angular and other modern technologies.
             </p>
           </div>
           
