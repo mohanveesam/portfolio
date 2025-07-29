@@ -24,40 +24,40 @@ const Experience = () => {
 
   const projects = [
     {
-      title: "E-Commerce Web Application",
+      title: "Enterprise Application Development",
       period: "2023",
-      description: "Built a responsive e-commerce platform with shopping cart, product catalog, and user authentication",
-      impact: "Modern user experience with mobile-first design",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "REST API"]
+      description: "Developed an enterprise application with role-based authorization, real-time data processing, and streamlined business operations.",
+      impact: "Improved operational efficiency and secured access control for different user roles.",
+      technologies: ["Angular", "TypeScript", "Bootstrap", "REST API", "Responsive Design"]
+    },
+    {
+      title: "IETM Application Development",
+      period: "2022",
+      description: "Developed an IETM application with features like saving pages, adding annotations, glossary management, and a hierarchical three-level page structure for easy navigation.",
+      impact: "Enhanced user experience with easy document management, quick navigation, and personalized annotations.",
+      technologies: ["Angular", "TypeScript", "Bootstrap", "REST API", "Responsive Design"]
     },
     {
       title: "Portfolio Website",
-      period: "2023",
+      period: "2025",
       description: "Created a modern, responsive portfolio website showcasing projects and skills",
       impact: "Professional online presence",
       technologies: ["React", "CSS3", "JavaScript", "Responsive Design"]
     },
-    {
-      title: "Task Management App",
-      period: "2022",
-      description: "Developed a task management application with drag-and-drop functionality",
-      impact: "Improved productivity for users",
-      technologies: ["React", "JavaScript", "HTML5", "CSS3"]
-    },
-    {
-      title: "Weather Dashboard",
-      period: "2022",
-      description: "Built a weather dashboard using external APIs with real-time data",
-      impact: "User-friendly weather information display",
-      technologies: ["JavaScript", "API Integration", "CSS3", "HTML5"]
-    },
-    {
-      title: "Landing Page Design",
-      period: "2022",
-      description: "Created responsive landing pages for various business clients",
-      impact: "Increased client conversion rates",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
-    }
+    // {
+    //   title: "Weather Dashboard",
+    //   period: "2022",
+    //   description: "Built a weather dashboard using external APIs with real-time data",
+    //   impact: "User-friendly weather information display",
+    //   technologies: ["JavaScript", "API Integration", "CSS3", "HTML5"]
+    // },
+    // {
+    //   title: "Landing Page Design",
+    //   period: "2022",
+    //   description: "Created responsive landing pages for various business clients",
+    //   impact: "Increased client conversion rates",
+    //   technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
+    // }
   ];
 
   return (
