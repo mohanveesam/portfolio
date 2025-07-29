@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Heart, Lightbulb, Target } from "lucide-react";
-import developerPortrait from "@/assets/developer-portrait.jpg";
+import developerPortrait from "@/assets/mohan.jpg";
 
 const About = () => {
   const highlights = [
