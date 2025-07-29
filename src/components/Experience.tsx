@@ -8,17 +8,17 @@ const Experience = () => {
       title: "Frontend Developer",
       company: "Smartify Software Solutions",
       location: "Remote",
-      period: "2022 - Present",
+      period: "October 2022 – Present",
       type: "Full-time",
-      description: "Developing responsive web applications and implementing modern frontend solutions using React, TypeScript, and modern CSS frameworks.",
+      description: "Developing responsive web applications and implementing modern frontend solutions using Angular, TypeScript, and modern CSS frameworks.",
       achievements: [
-        "Successfully completed 5+ frontend projects with modern tech stack",
+        "Successfully completed 3+ frontend projects with modern tech stack",
         "Implemented responsive designs that work across all device types",
         "Collaborated with backend developers to integrate REST APIs",
         "Improved application performance through code optimization"
       ],
-      technologies: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3", "Git"],
-      link: "https://smartifysoftware.com"
+      technologies: ["Angular", "TypeScript", "JavaScript", "Bootstrap", "HTML5", "CSS3", "Git"],
+      link: "https://smartifysol.com/"
     }
   ];
 
