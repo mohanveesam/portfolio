@@ -65,7 +65,7 @@ const Skills = () => {
             <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
               <Code2 className="w-8 h-8 text-primary" />
             </div>
-{/*             <h3 className="text-2xl font-bold text-primary mb-2">2+</h3> */}
+            <h3 className="text-2xl font-bold text-primary mb-2">2+</h3>
             <p className="text-muted-foreground">Git</p>
           </div>
           
@@ -74,7 +74,7 @@ const Skills = () => {
               <Globe className="w-8 h-8 text-secondary" />
         
             </div>
-{/*             <h3 className="text-2xl font-bold text-secondary mb-2">5+</h3> */}
+            <h3 className="text-2xl font-bold text-secondary mb-2">5+</h3>
             <p className="text-muted-foreground">Vs Code</p>
           </div>
           
