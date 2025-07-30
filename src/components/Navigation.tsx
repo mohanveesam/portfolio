@@ -31,8 +31,8 @@ const Navigation = () => {
 
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/mohan_veesam.pdf';
-    link.download = '/mohan_veesam.pdf';
+    link.href = '/mohan-veesam.pdf';
+    link.download = '/mohan-veesam.pdf';
     link.click();
   };
 

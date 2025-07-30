@@ -6,14 +6,14 @@ const Hero = () => {
   const handleDownloadResume = () => {
     // In a real app, this would download the actual resume file
     const link = document.createElement('a');
-    link.href = '/mohan_veesam.pdf'; // Add your resume file to public folder
-    link.download = '/mohan_veesam.pdf';
+    link.href = '/mohan-veesam.pdf'; // Add your resume file to public folder
+    link.download = '/mohan-veesam.pdf';
     link.click();
   };
 
   const handleViewResume = () => {
     // In a real app, this would open the resume in a new tab
-    window.open('/mohan_veesam.pdf', '_blank');
+    window.open('/mohan-veesam.pdf', '_blank');
   };
 
   return (
