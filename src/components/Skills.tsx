@@ -33,17 +33,17 @@ const Skills = () => {
     <section id="skills" className="py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-5 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             My <span className="text-gradient">Skills</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Frontend technologies and tools I use to create amazing user experiences
+            Web technologies and tools I use to create amazing user experiences
           </p>
         </div>
 
         {/* Main Skills Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-16 animate-fade-in">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-5 animate-fade-in">
           {frontendSkills.map((skill, index) => (
             <div 
               key={index}
@@ -60,31 +60,31 @@ const Skills = () => {
         </div>
 
         {/* Experience Stats */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16 animate-fade-in">
-          <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
+        {/* <div className="grid md:grid-cols-3 gap-8 mb-16 animate-fade-in"> */}
+          {/* <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
             <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
               <Code2 className="w-8 h-8 text-primary" />
             </div>
-{/*             <h3 className="text-2xl font-bold text-primary mb-2">2+</h3> */}
+            <h3 className="text-2xl font-bold text-primary mb-2">2+</h3>
             <p className="text-muted-foreground">Git</p>
-          </div>
+          </div> */}
           
-          <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
+          {/* <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
             <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-secondary/10 flex items-center justify-center">
               <Globe className="w-8 h-8 text-secondary" />
             </div>
-{/*             <h3 className="text-2xl font-bold text-secondary mb-2">5+</h3> */}
+            <h3 className="text-2xl font-bold text-secondary mb-2">5+</h3>
             <p className="text-muted-foreground">VS Code</p>
-          </div>
+          </div> */}
           
-          <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
+          {/* <div className="gradient-card border border-border/50 rounded-lg p-6 text-center glow-soft">
             <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-primary/10 flex items-center justify-center">
               <Wrench className="w-8 h-8 text-primary" />
             </div>
             <h3 className="text-2xl font-bold text-primary mb-2">Frontend</h3>
             <p className="text-muted-foreground">Specialization</p>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         {/* Additional Skills */}
 {/*         <div className="max-w-4xl mx-auto animate-fade-in">
@@ -117,7 +117,7 @@ const Skills = () => {
         </div> */}
 
         {/* Currently Learning */}
-        <div className="max-w-4xl mx-auto mt-8 animate-fade-in">
+        <div className="max-w-4xl mx-auto mt-5 animate-fade-in">
           <div className="gradient-card border border-border/50 rounded-lg p-6 glow-soft">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">

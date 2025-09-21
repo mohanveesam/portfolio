@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Heart, Lightbulb, Target } from "lucide-react";
-import developerPortrait from "@/assets/mohan.jpg";
+import developerPortrait from "@/assets/mohanv.png";
 
 const About = () => {
   const highlights = [
@@ -15,7 +15,7 @@ const About = () => {
     <section id="about" className="py-20 relative">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-5">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="text-gradient">Me</span>
           </h2>
@@ -61,7 +61,7 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold mb-4 text-gradient">My Journey</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
-                  I have 2+ years of experience in frontend development, working on projects and applications. My interest in how things work has grown into a passion for building user-friendly and visually engaging interfaces.
+                  I have 2+ years of experience in web development, working on projects and applications. My interest in how things work has grown into a passion for building user-friendly and visually engaging interfaces.
                 </p>
                 
                 <h3 className="text-2xl font-semibold mb-4 text-gradient">What Drives Me</h3>
@@ -69,10 +69,10 @@ const About = () => {
                  I believe great software is all about connecting with users. My focus is on making sure the technology works seamlessly for them.
                 </p>
                 
-                <h3 className="text-2xl font-semibold mb-4 text-gradient">Beyond Code</h3>
+                {/* <h3 className="text-2xl font-semibold mb-4 text-gradient">Beyond Code</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   When I'm not coding, I enjoy exploring design trends, contributing to open-source projects, and helping other developers. I’m always learning and staying up-to-date with the latest technologies.
-                </p>
+                </p> */}
               </CardContent>
             </Card>
 

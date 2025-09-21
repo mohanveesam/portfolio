@@ -5,9 +5,9 @@ import { Building2, Calendar, MapPin, ExternalLink } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Frontend Developer",
+      title: "Web Developer",
       company: "Smartify Software Solutions",
-      location: "Remote",
+      location: "Onsite",
       period: "October 2022 – Present",
       type: "Full-time",
       description: "Developing responsive web applications and implementing modern frontend solutions using Angular, TypeScript, and modern CSS frameworks.",
@@ -17,7 +17,7 @@ const Experience = () => {
         "Collaborated with backend developers to integrate REST APIs",
         "Improved application performance through code optimization"
       ],
-      technologies: ["Angular", "TypeScript", "JavaScript", "Bootstrap", "HTML5", "CSS3", "Git"],
+      technologies: ["Angular", "TypeScript", "JavaScript", "Bootstrap", "HTML5", "CSS3", "Git", "MySQL"],
       link: "https://smartifysol.com/"
     }
   ];
@@ -28,14 +28,14 @@ const Experience = () => {
       period: "2025",
       description: "Developed an enterprise application with role-based authorization, real-time data processing, and streamlined business operations.",
       impact: "Improved operational efficiency and secured access control for different user roles.",
-      technologies: ["Angular", "TypeScript", "Bootstrap", "REST API", "Responsive Design"]
+      technologies: ["Angular", "TypeScript", "RxJS", "Bootstrap", "HTML", "Responsive Design"]
     },
     {
       title: "IETM Application Development",
       period: "2024",
       description: "Developed an IETM application with features like saving pages, adding annotations, glossary management, and a hierarchical three-level page structure for easy navigation.",
       impact: "Enhanced user experience with easy document management, quick navigation, and personalized annotations.",
-      technologies: ["Angular", "TypeScript", "Bootstrap", "REST API", "Responsive Design"]
+      technologies: ["Angular", "TypeScript", "Bootstrap", "HTML", "MySQL"]
     },
     {
       title: "Portfolio Website",

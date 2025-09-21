@@ -105,9 +105,9 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-1 gap-12">
           {/* Contact Form */}
-          <Card className="gradient-card border border-border/50 glow-soft animate-fade-in">
+          {/* <Card className="gradient-card border border-border/50 glow-soft animate-fade-in">
             <CardHeader>
               <CardTitle className="flex items-center text-2xl">
                 <MessageCircle className="w-6 h-6 mr-3 text-primary" />
@@ -178,81 +178,88 @@ const Contact = () => {
                 </Button>
               </form>
             </CardContent>
-          </Card>
+          </Card> */}
 
           {/* Contact Information */}
           <div className="space-y-8 animate-fade-in">
-            {/* Contact Details */}
-            <Card className="gradient-card border border-border/50 glow-soft">
-              <CardHeader>
-                <CardTitle className="text-2xl">Contact Information</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                {contactInfo.map((info, index) => (
-                  <a 
-                    key={index}
-                    href={info.link}
-                    target={info.link.startsWith('http') ? '_blank' : '_self'}
-                    rel={info.link.startsWith('http') ? 'noopener noreferrer' : ''}
-                    className="flex items-center p-4 rounded-lg bg-accent/50 border border-border/30 hover:border-primary/40 transition-colors duration-300 group"
-                  >
-                    <info.icon className="w-6 h-6 text-primary mr-4 group-hover:scale-110 transition-transform duration-300" />
-                    <div>
-                      <div className="font-medium">{info.label}</div>
-                      <div className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                        {info.value}
+            {/* Three cards side by side */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              
+              {/* Contact Information */}
+              <Card className="gradient-card border border-border/50 glow-soft">
+                <CardHeader>
+                  <CardTitle className="text-2xl">Contact Information</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  {contactInfo.map((info, index) => (
+                    <a 
+                      key={index}
+                      href={info.link}
+                      target={info.link.startsWith('http') ? '_blank' : '_self'}
+                      rel={info.link.startsWith('http') ? 'noopener noreferrer' : ''}
+                      className="flex items-center p-4 rounded-lg bg-accent/50 border border-border/30 hover:border-primary/40 transition-colors duration-300 group"
+                    >
+                      <info.icon className="w-6 h-6 text-primary mr-4 group-hover:scale-110 transition-transform duration-300" />
+                      <div>
+                        <div className="font-medium">{info.label}</div>
+                        <div className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                          {info.value}
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                ))}
-              </CardContent>
-            </Card>
+                    </a>
+                  ))}
+                </CardContent>
+              </Card>
 
-            {/* Social Links */}
-            <Card className="gradient-card border border-border/50 glow-soft">
-              <CardHeader>
-                <CardTitle className="text-2xl">Connect with me</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {socialLinks.map((social, index) => (
-                  <a 
-                    key={index}
-                    href={social.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center p-4 rounded-lg bg-accent/50 border border-border/30 hover:border-primary/40 transition-colors duration-300 group"
-                  >
-                    <social.icon className={`w-6 h-6 mr-4 transition-all duration-300 group-hover:scale-110 ${social.color}`} />
-                    <div>
-                      <div className="font-medium">{social.label}</div>
-                      <div className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                        {social.username}
+              {/* Social Links */}
+              <Card className="gradient-card border border-border/50 glow-soft">
+                <CardHeader>
+                  <CardTitle className="text-2xl">Connect with me</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  {socialLinks.map((social, index) => (
+                    <a 
+                      key={index}
+                      href={social.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center p-4 rounded-lg bg-accent/50 border border-border/30 hover:border-primary/40 transition-colors duration-300 group"
+                    >
+                      <social.icon className={`w-6 h-6 mr-4 transition-all duration-300 group-hover:scale-110 ${social.color}`} />
+                      <div>
+                        <div className="font-medium">{social.label}</div>
+                        <div className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                          {social.username}
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                ))}
-              </CardContent>
-            </Card>
+                    </a>
+                  ))}
+                </CardContent>
+              </Card>
 
-            {/* Call to Action */}
-            <Card className="gradient-card border border-primary/20 bg-gradient-to-r from-primary/5 to-secondary/5">
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2 text-gradient">
-                  Ready to work together?
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Let's create something amazing together.
-                </p>
-                <Button 
-                  variant="glowSecondary" 
-                  size="lg"
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  Start a Project
-                </Button>
-              </CardContent>
-            </Card>
+              {/* Call to Action */}
+              <Card className="gradient-card border border-primary/20 bg-gradient-to-r from-primary/5 to-secondary/5">
+                <CardContent className="p-6 text-center flex flex-col justify-center h-full">
+                  <h3 className="text-xl font-semibold mb-2 text-gradient">
+                    Ready to work together?
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Let's create something amazing together.
+                  </p>
+                  <Button 
+                    variant="glowSecondary" 
+                    size="lg"
+                    onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  >
+                    Start a Project
+                  </Button>
+                </CardContent>
+              </Card>
+
+            </div>
           </div>
+
+
         </div>
       </div>
     </section>

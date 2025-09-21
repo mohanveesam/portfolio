@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <div className="text-2xl font-bold text-gradient mb-2">Mohan Veesam</div>
             <p className="text-muted-foreground">
-              Frontend Developer crafting beautiful web experiences
+              Web Developer crafting beautiful web experiences
             </p>
           </div>
 
@@ -83,7 +83,7 @@ const Footer = () => {
 
       {/* Floating scroll indicator */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center glow-primary animate-pulse">
+        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center glow-primary animate-pulse" onClick={scrollToTop}>
           <ArrowUp className="w-5 h-5 text-white" />
         </div>
       </div>
