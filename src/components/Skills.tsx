@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { SiAngular, SiNpm, SiMysql, SiTypescript, SiJavascript, SiHtml5, SiCss3, SiBootstrap } from "react-icons/si";
 import { 
   Code2, 
   Database, 
@@ -11,16 +12,17 @@ import {
 } from "lucide-react";
 
 const Skills = () => {
-  const frontendSkills = [
-    { name: "Angular", icon: "🅰️", color: "text-blue-400" },
-    { name: "TypeScript", icon: "TS", color: "text-white" },
-    { name: "JavaScript", icon: "JS", color: "text-yellow-400" },
-    { name: "RxJS", icon: "🔄", color: "text-blue-500" },
-    { name: "HTML5", icon: "🌐", color: "text-cyan-400" },
-    { name: "CSS3", icon: "🎨", color: "text-orange-500" },
-    { name: "Bootstrap", icon: "🔧", color: "text-blue-600" },
-    { name: "MySQL", icon: "💾", color: "text-orange-600" },
-  ];
+const frontendSkills = [
+  { name: "Angular", icon: <SiAngular className="text-red-500" /> },
+  { name: "TypeScript", icon: <SiTypescript className="text-blue-400" /> },
+  { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+  { name: "Rxjs", icon: <SiNpm className="text-cyan-400" /> },
+  { name: "HTML5", icon: <SiHtml5 className="text-orange-500" /> },
+  { name: "CSS3", icon: <SiCss3 className="text-blue-500" /> },
+  { name: "Bootstrap", icon: <SiBootstrap className="text-purple-500" /> },
+  { name: "MySQL", icon: <SiMysql className="text-orange-600" /> },
+];
+
 
   const additionalSkills = [
     "Responsive Design", "Mobile-First Development", "RESTful APIs",
@@ -52,7 +54,7 @@ const Skills = () => {
               <div className="w-16 h-16 mx-auto mb-4 rounded-lg bg-accent/30 flex items-center justify-center text-2xl group-hover:bg-accent/50 transition-colors duration-300">
                 {skill.icon}
               </div>
-              <h3 className={`text-lg font-semibold ${skill.color} group-hover:text-primary transition-colors duration-300`}>
+              <h3 className={`text-lg font-semibold group-hover:text-primary transition-colors duration-300`}>
                 {skill.name}
               </h3>
             </div>
