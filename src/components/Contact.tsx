@@ -72,8 +72,8 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      username: "@mohan-veesam",
-      link: "https://github.com/mohan-veesam",
+      username: "@mohanveesam",
+      link: "https://github.com/mohanveesam",
       color: "hover:text-gray-400"
     },
     {
